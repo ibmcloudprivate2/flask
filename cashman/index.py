@@ -13,6 +13,9 @@ transactions = [
   Expense('Rock Concert', 100)
 ]
 
+@app.route("/")
+def hello_world():
+  return "a sample python API Flask application."
 
 @app.route('/incomes')
 def get_incomes():
